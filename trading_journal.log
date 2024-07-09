@@ -1,0 +1,324 @@
+2024-07-09 22:05:06,617 - INFO - Loaded Trades: {}
+2024-07-09 22:05:06,638 - ERROR - Error updating summary: 'TradingJournal' object has no attribute 'monthly_profit_label'
+2024-07-09 22:05:06,665 - DEBUG - Importing BlpImagePlugin
+2024-07-09 22:05:06,667 - DEBUG - Importing BmpImagePlugin
+2024-07-09 22:05:06,667 - DEBUG - Importing BufrStubImagePlugin
+2024-07-09 22:05:06,668 - DEBUG - Importing CurImagePlugin
+2024-07-09 22:05:06,669 - DEBUG - Importing DcxImagePlugin
+2024-07-09 22:05:06,671 - DEBUG - Importing DdsImagePlugin
+2024-07-09 22:05:06,671 - DEBUG - Importing EpsImagePlugin
+2024-07-09 22:05:06,685 - DEBUG - Importing FitsImagePlugin
+2024-07-09 22:05:06,687 - DEBUG - Importing FitsStubImagePlugin
+2024-07-09 22:05:06,688 - DEBUG - Importing FliImagePlugin
+2024-07-09 22:05:06,688 - DEBUG - Importing FpxImagePlugin
+2024-07-09 22:05:06,689 - DEBUG - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-07-09 22:05:06,689 - DEBUG - Importing FtexImagePlugin
+2024-07-09 22:05:06,691 - DEBUG - Importing GbrImagePlugin
+2024-07-09 22:05:06,692 - DEBUG - Importing GifImagePlugin
+2024-07-09 22:05:06,692 - DEBUG - Importing GribStubImagePlugin
+2024-07-09 22:05:06,693 - DEBUG - Importing Hdf5StubImagePlugin
+2024-07-09 22:05:06,694 - DEBUG - Importing IcnsImagePlugin
+2024-07-09 22:05:06,697 - DEBUG - Importing IcoImagePlugin
+2024-07-09 22:05:06,699 - DEBUG - Importing ImImagePlugin
+2024-07-09 22:05:06,700 - DEBUG - Importing ImtImagePlugin
+2024-07-09 22:05:06,701 - DEBUG - Importing IptcImagePlugin
+2024-07-09 22:05:06,703 - DEBUG - Importing JpegImagePlugin
+2024-07-09 22:05:06,703 - DEBUG - Importing Jpeg2KImagePlugin
+2024-07-09 22:05:06,703 - DEBUG - Importing McIdasImagePlugin
+2024-07-09 22:05:06,704 - DEBUG - Importing MicImagePlugin
+2024-07-09 22:05:06,705 - DEBUG - Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-07-09 22:05:06,705 - DEBUG - Importing MpegImagePlugin
+2024-07-09 22:05:06,706 - DEBUG - Importing MpoImagePlugin
+2024-07-09 22:05:06,707 - DEBUG - Importing MspImagePlugin
+2024-07-09 22:05:06,708 - DEBUG - Importing PalmImagePlugin
+2024-07-09 22:05:06,709 - DEBUG - Importing PcdImagePlugin
+2024-07-09 22:05:06,710 - DEBUG - Importing PcxImagePlugin
+2024-07-09 22:05:06,710 - DEBUG - Importing PdfImagePlugin
+2024-07-09 22:05:06,717 - DEBUG - Importing PixarImagePlugin
+2024-07-09 22:05:06,717 - DEBUG - Importing PngImagePlugin
+2024-07-09 22:05:06,717 - DEBUG - Importing PpmImagePlugin
+2024-07-09 22:05:06,717 - DEBUG - Importing PsdImagePlugin
+2024-07-09 22:05:06,718 - DEBUG - Importing SgiImagePlugin
+2024-07-09 22:05:06,719 - DEBUG - Importing SpiderImagePlugin
+2024-07-09 22:05:06,720 - DEBUG - Importing SunImagePlugin
+2024-07-09 22:05:06,722 - DEBUG - Importing TgaImagePlugin
+2024-07-09 22:05:06,723 - DEBUG - Importing TiffImagePlugin
+2024-07-09 22:05:06,723 - DEBUG - Importing WebPImagePlugin
+2024-07-09 22:05:06,725 - DEBUG - Importing WmfImagePlugin
+2024-07-09 22:05:06,726 - DEBUG - Importing XbmImagePlugin
+2024-07-09 22:05:06,727 - DEBUG - Importing XpmImagePlugin
+2024-07-09 22:05:06,728 - DEBUG - Importing XVThumbImagePlugin
+2024-07-09 22:05:09,163 - INFO - Trades saved successfully.
+2024-07-09 22:05:15,531 - INFO - Loaded Trades: {}
+2024-07-09 22:05:15,550 - ERROR - Error updating summary: 'TradingJournal' object has no attribute 'monthly_profit_label'
+2024-07-09 22:05:15,560 - DEBUG - Importing BlpImagePlugin
+2024-07-09 22:05:15,561 - DEBUG - Importing BmpImagePlugin
+2024-07-09 22:05:15,561 - DEBUG - Importing BufrStubImagePlugin
+2024-07-09 22:05:15,561 - DEBUG - Importing CurImagePlugin
+2024-07-09 22:05:15,562 - DEBUG - Importing DcxImagePlugin
+2024-07-09 22:05:15,562 - DEBUG - Importing DdsImagePlugin
+2024-07-09 22:05:15,563 - DEBUG - Importing EpsImagePlugin
+2024-07-09 22:05:15,577 - DEBUG - Importing FitsImagePlugin
+2024-07-09 22:05:15,578 - DEBUG - Importing FitsStubImagePlugin
+2024-07-09 22:05:15,578 - DEBUG - Importing FliImagePlugin
+2024-07-09 22:05:15,579 - DEBUG - Importing FpxImagePlugin
+2024-07-09 22:05:15,579 - DEBUG - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-07-09 22:05:15,580 - DEBUG - Importing FtexImagePlugin
+2024-07-09 22:05:15,580 - DEBUG - Importing GbrImagePlugin
+2024-07-09 22:05:15,580 - DEBUG - Importing GifImagePlugin
+2024-07-09 22:05:15,581 - DEBUG - Importing GribStubImagePlugin
+2024-07-09 22:05:15,581 - DEBUG - Importing Hdf5StubImagePlugin
+2024-07-09 22:05:15,581 - DEBUG - Importing IcnsImagePlugin
+2024-07-09 22:05:15,583 - DEBUG - Importing IcoImagePlugin
+2024-07-09 22:05:15,583 - DEBUG - Importing ImImagePlugin
+2024-07-09 22:05:15,584 - DEBUG - Importing ImtImagePlugin
+2024-07-09 22:05:15,584 - DEBUG - Importing IptcImagePlugin
+2024-07-09 22:05:15,585 - DEBUG - Importing JpegImagePlugin
+2024-07-09 22:05:15,585 - DEBUG - Importing Jpeg2KImagePlugin
+2024-07-09 22:05:15,585 - DEBUG - Importing McIdasImagePlugin
+2024-07-09 22:05:15,585 - DEBUG - Importing MicImagePlugin
+2024-07-09 22:05:15,585 - DEBUG - Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-07-09 22:05:15,585 - DEBUG - Importing MpegImagePlugin
+2024-07-09 22:05:15,586 - DEBUG - Importing MpoImagePlugin
+2024-07-09 22:05:15,586 - DEBUG - Importing MspImagePlugin
+2024-07-09 22:05:15,587 - DEBUG - Importing PalmImagePlugin
+2024-07-09 22:05:15,587 - DEBUG - Importing PcdImagePlugin
+2024-07-09 22:05:15,588 - DEBUG - Importing PcxImagePlugin
+2024-07-09 22:05:15,588 - DEBUG - Importing PdfImagePlugin
+2024-07-09 22:05:15,594 - DEBUG - Importing PixarImagePlugin
+2024-07-09 22:05:15,594 - DEBUG - Importing PngImagePlugin
+2024-07-09 22:05:15,594 - DEBUG - Importing PpmImagePlugin
+2024-07-09 22:05:15,595 - DEBUG - Importing PsdImagePlugin
+2024-07-09 22:05:15,595 - DEBUG - Importing SgiImagePlugin
+2024-07-09 22:05:15,595 - DEBUG - Importing SpiderImagePlugin
+2024-07-09 22:05:15,596 - DEBUG - Importing SunImagePlugin
+2024-07-09 22:05:15,596 - DEBUG - Importing TgaImagePlugin
+2024-07-09 22:05:15,597 - DEBUG - Importing TiffImagePlugin
+2024-07-09 22:05:15,597 - DEBUG - Importing WebPImagePlugin
+2024-07-09 22:05:15,597 - DEBUG - Importing WmfImagePlugin
+2024-07-09 22:05:15,598 - DEBUG - Importing XbmImagePlugin
+2024-07-09 22:05:15,599 - DEBUG - Importing XpmImagePlugin
+2024-07-09 22:05:15,599 - DEBUG - Importing XVThumbImagePlugin
+2024-07-09 22:05:21,814 - INFO - Trades saved successfully.
+2024-07-09 22:25:19,218 INFO:Loaded Trades: {}
+2024-07-09 22:25:19,233 DEBUG:Selected year: 2024, Selected month: January (1)
+2024-07-09 22:25:19,233 DEBUG:Number of days in month: 31
+2024-07-09 22:25:19,234 DEBUG:First day of the month (0=Mon, 6=Sun): 0
+2024-07-09 22:25:19,238 ERROR:Error updating summary: 'TradingJournal' object has no attribute 'monthly_profit_label'
+2024-07-09 22:25:19,249 DEBUG:Importing BlpImagePlugin
+2024-07-09 22:25:19,250 DEBUG:Importing BmpImagePlugin
+2024-07-09 22:25:19,250 DEBUG:Importing BufrStubImagePlugin
+2024-07-09 22:25:19,250 DEBUG:Importing CurImagePlugin
+2024-07-09 22:25:19,251 DEBUG:Importing DcxImagePlugin
+2024-07-09 22:25:19,252 DEBUG:Importing DdsImagePlugin
+2024-07-09 22:25:19,252 DEBUG:Importing EpsImagePlugin
+2024-07-09 22:25:19,266 DEBUG:Importing FitsImagePlugin
+2024-07-09 22:25:19,267 DEBUG:Importing FitsStubImagePlugin
+2024-07-09 22:25:19,267 DEBUG:Importing FliImagePlugin
+2024-07-09 22:25:19,268 DEBUG:Importing FpxImagePlugin
+2024-07-09 22:25:19,268 DEBUG:Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-07-09 22:25:19,268 DEBUG:Importing FtexImagePlugin
+2024-07-09 22:25:19,269 DEBUG:Importing GbrImagePlugin
+2024-07-09 22:25:19,270 DEBUG:Importing GifImagePlugin
+2024-07-09 22:25:19,270 DEBUG:Importing GribStubImagePlugin
+2024-07-09 22:25:19,270 DEBUG:Importing Hdf5StubImagePlugin
+2024-07-09 22:25:19,270 DEBUG:Importing IcnsImagePlugin
+2024-07-09 22:25:19,271 DEBUG:Importing IcoImagePlugin
+2024-07-09 22:25:19,272 DEBUG:Importing ImImagePlugin
+2024-07-09 22:25:19,273 DEBUG:Importing ImtImagePlugin
+2024-07-09 22:25:19,273 DEBUG:Importing IptcImagePlugin
+2024-07-09 22:25:19,274 DEBUG:Importing JpegImagePlugin
+2024-07-09 22:25:19,274 DEBUG:Importing Jpeg2KImagePlugin
+2024-07-09 22:25:19,274 DEBUG:Importing McIdasImagePlugin
+2024-07-09 22:25:19,274 DEBUG:Importing MicImagePlugin
+2024-07-09 22:25:19,275 DEBUG:Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-07-09 22:25:19,275 DEBUG:Importing MpegImagePlugin
+2024-07-09 22:25:19,275 DEBUG:Importing MpoImagePlugin
+2024-07-09 22:25:19,276 DEBUG:Importing MspImagePlugin
+2024-07-09 22:25:19,276 DEBUG:Importing PalmImagePlugin
+2024-07-09 22:25:19,277 DEBUG:Importing PcdImagePlugin
+2024-07-09 22:25:19,277 DEBUG:Importing PcxImagePlugin
+2024-07-09 22:25:19,277 DEBUG:Importing PdfImagePlugin
+2024-07-09 22:25:19,284 DEBUG:Importing PixarImagePlugin
+2024-07-09 22:25:19,284 DEBUG:Importing PngImagePlugin
+2024-07-09 22:25:19,284 DEBUG:Importing PpmImagePlugin
+2024-07-09 22:25:19,284 DEBUG:Importing PsdImagePlugin
+2024-07-09 22:25:19,285 DEBUG:Importing SgiImagePlugin
+2024-07-09 22:25:19,285 DEBUG:Importing SpiderImagePlugin
+2024-07-09 22:25:19,286 DEBUG:Importing SunImagePlugin
+2024-07-09 22:25:19,286 DEBUG:Importing TgaImagePlugin
+2024-07-09 22:25:19,286 DEBUG:Importing TiffImagePlugin
+2024-07-09 22:25:19,287 DEBUG:Importing WebPImagePlugin
+2024-07-09 22:25:19,288 DEBUG:Importing WmfImagePlugin
+2024-07-09 22:25:19,288 DEBUG:Importing XbmImagePlugin
+2024-07-09 22:25:19,289 DEBUG:Importing XpmImagePlugin
+2024-07-09 22:25:19,289 DEBUG:Importing XVThumbImagePlugin
+2024-07-09 22:25:19,323 DEBUG:Selected year: 2024, Selected month: January (1)
+2024-07-09 22:25:19,323 DEBUG:Number of days in month: 31
+2024-07-09 22:25:19,324 DEBUG:First day of the month (0=Mon, 6=Sun): 0
+2024-07-09 22:25:22,751 DEBUG:Selected year: 2024, Selected month: December (12)
+2024-07-09 22:25:22,752 DEBUG:Number of days in month: 31
+2024-07-09 22:25:22,752 DEBUG:First day of the month (0=Mon, 6=Sun): 6
+2024-07-09 22:25:24,375 DEBUG:Selected year: 2025, Selected month: December (12)
+2024-07-09 22:25:24,375 DEBUG:Number of days in month: 31
+2024-07-09 22:25:24,376 DEBUG:First day of the month (0=Mon, 6=Sun): 0
+2024-07-09 22:25:24,877 DEBUG:Selected year: 2026, Selected month: December (12)
+2024-07-09 22:25:24,877 DEBUG:Number of days in month: 31
+2024-07-09 22:25:24,878 DEBUG:First day of the month (0=Mon, 6=Sun): 1
+2024-07-09 22:25:25,380 DEBUG:Selected year: 2024, Selected month: December (12)
+2024-07-09 22:25:25,380 DEBUG:Number of days in month: 31
+2024-07-09 22:25:25,381 DEBUG:First day of the month (0=Mon, 6=Sun): 6
+2024-07-09 22:25:26,470 DEBUG:Selected year: 2024, Selected month: February (2)
+2024-07-09 22:25:26,470 DEBUG:Number of days in month: 29
+2024-07-09 22:25:26,471 DEBUG:First day of the month (0=Mon, 6=Sun): 3
+2024-07-09 22:25:27,611 DEBUG:Selected year: 2024, Selected month: May (5)
+2024-07-09 22:25:27,611 DEBUG:Number of days in month: 31
+2024-07-09 22:25:27,612 DEBUG:First day of the month (0=Mon, 6=Sun): 2
+2024-07-09 22:25:29,775 DEBUG:Selected year: 2024, Selected month: February (2)
+2024-07-09 22:25:29,775 DEBUG:Number of days in month: 29
+2024-07-09 22:25:29,776 DEBUG:First day of the month (0=Mon, 6=Sun): 3
+2024-07-09 22:25:32,290 DEBUG:Selected year: 2024, Selected month: December (12)
+2024-07-09 22:25:32,290 DEBUG:Number of days in month: 31
+2024-07-09 22:25:32,291 DEBUG:First day of the month (0=Mon, 6=Sun): 6
+2024-07-09 22:25:33,495 DEBUG:Selected year: 2026, Selected month: December (12)
+2024-07-09 22:25:33,495 DEBUG:Number of days in month: 31
+2024-07-09 22:25:33,496 DEBUG:First day of the month (0=Mon, 6=Sun): 1
+2024-07-09 22:25:34,471 DEBUG:Selected year: 2026, Selected month: February (2)
+2024-07-09 22:25:34,472 DEBUG:Number of days in month: 28
+2024-07-09 22:25:34,472 DEBUG:First day of the month (0=Mon, 6=Sun): 6
+2024-07-09 22:25:37,232 INFO:Trades saved successfully.
+2024-07-09 22:25:41,079 INFO:Loaded Trades: {}
+2024-07-09 22:25:41,093 DEBUG:Selected year: 2024, Selected month: January (1)
+2024-07-09 22:25:41,093 DEBUG:Number of days in month: 31
+2024-07-09 22:25:41,094 DEBUG:First day of the month (0=Mon, 6=Sun): 0
+2024-07-09 22:25:41,097 ERROR:Error updating summary: 'TradingJournal' object has no attribute 'monthly_profit_label'
+2024-07-09 22:25:41,111 DEBUG:Importing BlpImagePlugin
+2024-07-09 22:25:41,112 DEBUG:Importing BmpImagePlugin
+2024-07-09 22:25:41,112 DEBUG:Importing BufrStubImagePlugin
+2024-07-09 22:25:41,112 DEBUG:Importing CurImagePlugin
+2024-07-09 22:25:41,113 DEBUG:Importing DcxImagePlugin
+2024-07-09 22:25:41,114 DEBUG:Importing DdsImagePlugin
+2024-07-09 22:25:41,115 DEBUG:Importing EpsImagePlugin
+2024-07-09 22:25:41,129 DEBUG:Importing FitsImagePlugin
+2024-07-09 22:25:41,129 DEBUG:Importing FitsStubImagePlugin
+2024-07-09 22:25:41,129 DEBUG:Importing FliImagePlugin
+2024-07-09 22:25:41,129 DEBUG:Importing FpxImagePlugin
+2024-07-09 22:25:41,131 DEBUG:Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-07-09 22:25:41,131 DEBUG:Importing FtexImagePlugin
+2024-07-09 22:25:41,132 DEBUG:Importing GbrImagePlugin
+2024-07-09 22:25:41,132 DEBUG:Importing GifImagePlugin
+2024-07-09 22:25:41,132 DEBUG:Importing GribStubImagePlugin
+2024-07-09 22:25:41,133 DEBUG:Importing Hdf5StubImagePlugin
+2024-07-09 22:25:41,133 DEBUG:Importing IcnsImagePlugin
+2024-07-09 22:25:41,134 DEBUG:Importing IcoImagePlugin
+2024-07-09 22:25:41,135 DEBUG:Importing ImImagePlugin
+2024-07-09 22:25:41,135 DEBUG:Importing ImtImagePlugin
+2024-07-09 22:25:41,136 DEBUG:Importing IptcImagePlugin
+2024-07-09 22:25:41,136 DEBUG:Importing JpegImagePlugin
+2024-07-09 22:25:41,136 DEBUG:Importing Jpeg2KImagePlugin
+2024-07-09 22:25:41,137 DEBUG:Importing McIdasImagePlugin
+2024-07-09 22:25:41,137 DEBUG:Importing MicImagePlugin
+2024-07-09 22:25:41,138 DEBUG:Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-07-09 22:25:41,138 DEBUG:Importing MpegImagePlugin
+2024-07-09 22:25:41,138 DEBUG:Importing MpoImagePlugin
+2024-07-09 22:25:41,138 DEBUG:Importing MspImagePlugin
+2024-07-09 22:25:41,139 DEBUG:Importing PalmImagePlugin
+2024-07-09 22:25:41,139 DEBUG:Importing PcdImagePlugin
+2024-07-09 22:25:41,139 DEBUG:Importing PcxImagePlugin
+2024-07-09 22:25:41,139 DEBUG:Importing PdfImagePlugin
+2024-07-09 22:25:41,145 DEBUG:Importing PixarImagePlugin
+2024-07-09 22:25:41,146 DEBUG:Importing PngImagePlugin
+2024-07-09 22:25:41,146 DEBUG:Importing PpmImagePlugin
+2024-07-09 22:25:41,146 DEBUG:Importing PsdImagePlugin
+2024-07-09 22:25:41,146 DEBUG:Importing SgiImagePlugin
+2024-07-09 22:25:41,147 DEBUG:Importing SpiderImagePlugin
+2024-07-09 22:25:41,147 DEBUG:Importing SunImagePlugin
+2024-07-09 22:25:41,147 DEBUG:Importing TgaImagePlugin
+2024-07-09 22:25:41,148 DEBUG:Importing TiffImagePlugin
+2024-07-09 22:25:41,148 DEBUG:Importing WebPImagePlugin
+2024-07-09 22:25:41,149 DEBUG:Importing WmfImagePlugin
+2024-07-09 22:25:41,149 DEBUG:Importing XbmImagePlugin
+2024-07-09 22:25:41,150 DEBUG:Importing XpmImagePlugin
+2024-07-09 22:25:41,150 DEBUG:Importing XVThumbImagePlugin
+2024-07-09 22:25:41,182 DEBUG:Selected year: 2024, Selected month: January (1)
+2024-07-09 22:25:41,182 DEBUG:Number of days in month: 31
+2024-07-09 22:25:41,183 DEBUG:First day of the month (0=Mon, 6=Sun): 0
+2024-07-09 22:28:09,327 INFO:Trades saved successfully.
+2024-07-09 22:28:11,842 INFO:Loaded Trades: {}
+2024-07-09 22:28:11,857 DEBUG:Selected year: 2024, Selected month: July (7)
+2024-07-09 22:28:11,857 DEBUG:Number of days in month: 31
+2024-07-09 22:28:11,857 DEBUG:First day of the month (0=Mon, 6=Sun): 0
+2024-07-09 22:28:11,861 ERROR:Error updating summary: 'TradingJournal' object has no attribute 'monthly_profit_label'
+2024-07-09 22:28:11,872 DEBUG:Importing BlpImagePlugin
+2024-07-09 22:28:11,873 DEBUG:Importing BmpImagePlugin
+2024-07-09 22:28:11,873 DEBUG:Importing BufrStubImagePlugin
+2024-07-09 22:28:11,874 DEBUG:Importing CurImagePlugin
+2024-07-09 22:28:11,874 DEBUG:Importing DcxImagePlugin
+2024-07-09 22:28:11,875 DEBUG:Importing DdsImagePlugin
+2024-07-09 22:28:11,875 DEBUG:Importing EpsImagePlugin
+2024-07-09 22:28:11,889 DEBUG:Importing FitsImagePlugin
+2024-07-09 22:28:11,890 DEBUG:Importing FitsStubImagePlugin
+2024-07-09 22:28:11,890 DEBUG:Importing FliImagePlugin
+2024-07-09 22:28:11,891 DEBUG:Importing FpxImagePlugin
+2024-07-09 22:28:11,892 DEBUG:Image: failed to import FpxImagePlugin: No module named 'olefile'
+2024-07-09 22:28:11,892 DEBUG:Importing FtexImagePlugin
+2024-07-09 22:28:11,892 DEBUG:Importing GbrImagePlugin
+2024-07-09 22:28:11,892 DEBUG:Importing GifImagePlugin
+2024-07-09 22:28:11,893 DEBUG:Importing GribStubImagePlugin
+2024-07-09 22:28:11,893 DEBUG:Importing Hdf5StubImagePlugin
+2024-07-09 22:28:11,893 DEBUG:Importing IcnsImagePlugin
+2024-07-09 22:28:11,895 DEBUG:Importing IcoImagePlugin
+2024-07-09 22:28:11,895 DEBUG:Importing ImImagePlugin
+2024-07-09 22:28:11,896 DEBUG:Importing ImtImagePlugin
+2024-07-09 22:28:11,896 DEBUG:Importing IptcImagePlugin
+2024-07-09 22:28:11,897 DEBUG:Importing JpegImagePlugin
+2024-07-09 22:28:11,897 DEBUG:Importing Jpeg2KImagePlugin
+2024-07-09 22:28:11,897 DEBUG:Importing McIdasImagePlugin
+2024-07-09 22:28:11,897 DEBUG:Importing MicImagePlugin
+2024-07-09 22:28:11,898 DEBUG:Image: failed to import MicImagePlugin: No module named 'olefile'
+2024-07-09 22:28:11,898 DEBUG:Importing MpegImagePlugin
+2024-07-09 22:28:11,899 DEBUG:Importing MpoImagePlugin
+2024-07-09 22:28:11,899 DEBUG:Importing MspImagePlugin
+2024-07-09 22:28:11,900 DEBUG:Importing PalmImagePlugin
+2024-07-09 22:28:11,900 DEBUG:Importing PcdImagePlugin
+2024-07-09 22:28:11,901 DEBUG:Importing PcxImagePlugin
+2024-07-09 22:28:11,901 DEBUG:Importing PdfImagePlugin
+2024-07-09 22:28:11,906 DEBUG:Importing PixarImagePlugin
+2024-07-09 22:28:11,907 DEBUG:Importing PngImagePlugin
+2024-07-09 22:28:11,907 DEBUG:Importing PpmImagePlugin
+2024-07-09 22:28:11,907 DEBUG:Importing PsdImagePlugin
+2024-07-09 22:28:11,907 DEBUG:Importing SgiImagePlugin
+2024-07-09 22:28:11,907 DEBUG:Importing SpiderImagePlugin
+2024-07-09 22:28:11,907 DEBUG:Importing SunImagePlugin
+2024-07-09 22:28:11,908 DEBUG:Importing TgaImagePlugin
+2024-07-09 22:28:11,908 DEBUG:Importing TiffImagePlugin
+2024-07-09 22:28:11,908 DEBUG:Importing WebPImagePlugin
+2024-07-09 22:28:11,909 DEBUG:Importing WmfImagePlugin
+2024-07-09 22:28:11,910 DEBUG:Importing XbmImagePlugin
+2024-07-09 22:28:11,911 DEBUG:Importing XpmImagePlugin
+2024-07-09 22:28:11,911 DEBUG:Importing XVThumbImagePlugin
+2024-07-09 22:28:11,942 DEBUG:Selected year: 2024, Selected month: July (7)
+2024-07-09 22:28:11,942 DEBUG:Number of days in month: 31
+2024-07-09 22:28:11,943 DEBUG:First day of the month (0=Mon, 6=Sun): 0
+2024-07-09 22:28:14,745 DEBUG:Selected year: 2024, Selected month: January (1)
+2024-07-09 22:28:14,745 DEBUG:Number of days in month: 31
+2024-07-09 22:28:14,746 DEBUG:First day of the month (0=Mon, 6=Sun): 0
+2024-07-09 22:28:16,131 DEBUG:Selected year: 2024, Selected month: July (7)
+2024-07-09 22:28:16,132 DEBUG:Number of days in month: 31
+2024-07-09 22:28:16,132 DEBUG:First day of the month (0=Mon, 6=Sun): 0
+2024-07-09 22:28:22,100 DEBUG:Selected year: 2024, Selected month: December (12)
+2024-07-09 22:28:22,101 DEBUG:Number of days in month: 31
+2024-07-09 22:28:22,101 DEBUG:First day of the month (0=Mon, 6=Sun): 6
+2024-07-09 22:28:23,243 DEBUG:Selected year: 2024, Selected month: February (2)
+2024-07-09 22:28:23,243 DEBUG:Number of days in month: 29
+2024-07-09 22:28:23,244 DEBUG:First day of the month (0=Mon, 6=Sun): 3
+2024-07-09 22:28:24,016 DEBUG:Selected year: 2024, Selected month: January (1)
+2024-07-09 22:28:24,016 DEBUG:Number of days in month: 31
+2024-07-09 22:28:24,018 DEBUG:First day of the month (0=Mon, 6=Sun): 0
+2024-07-09 22:28:24,837 DEBUG:Selected year: 2024, Selected month: March (3)
+2024-07-09 22:28:24,837 DEBUG:Number of days in month: 31
+2024-07-09 22:28:24,838 DEBUG:First day of the month (0=Mon, 6=Sun): 4
+2024-07-09 22:28:26,411 DEBUG:Selected year: 2024, Selected month: April (4)
+2024-07-09 22:28:26,412 DEBUG:Number of days in month: 30
+2024-07-09 22:28:26,412 DEBUG:First day of the month (0=Mon, 6=Sun): 0
+2024-07-09 22:28:28,560 INFO:Trades saved successfully.

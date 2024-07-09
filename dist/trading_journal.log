@@ -1,0 +1,30 @@
+2024-07-09 22:32:57,427 DEBUG:Selected year: 2024, Selected month: July (7)
+2024-07-09 22:32:57,427 DEBUG:Number of days in month: 31
+2024-07-09 22:32:57,428 DEBUG:First day of the month (0=Mon, 6=Sun): 0
+2024-07-09 22:32:57,432 ERROR:Error updating summary: 'TradingJournal' object has no attribute 'monthly_profit_label'
+2024-07-09 22:32:57,434 ERROR:Error loading logo: [Errno 2] No such file or directory: 'C:\\Users\\kei_v\\AppData\\Local\\Temp\\_MEI165322\\logo.webp'
+2024-07-09 22:32:57,451 DEBUG:Selected year: 2024, Selected month: July (7)
+2024-07-09 22:32:57,451 DEBUG:Number of days in month: 31
+2024-07-09 22:32:57,452 DEBUG:First day of the month (0=Mon, 6=Sun): 0
+2024-07-09 22:33:00,389 DEBUG:Selected year: 2025, Selected month: July (7)
+2024-07-09 22:33:00,390 DEBUG:Number of days in month: 31
+2024-07-09 22:33:00,390 DEBUG:First day of the month (0=Mon, 6=Sun): 1
+2024-07-09 22:33:00,971 DEBUG:Selected year: 2026, Selected month: July (7)
+2024-07-09 22:33:00,972 DEBUG:Number of days in month: 31
+2024-07-09 22:33:00,972 DEBUG:First day of the month (0=Mon, 6=Sun): 2
+2024-07-09 22:33:02,240 DEBUG:Selected year: 2026, Selected month: January (1)
+2024-07-09 22:33:02,241 DEBUG:Number of days in month: 31
+2024-07-09 22:33:02,241 DEBUG:First day of the month (0=Mon, 6=Sun): 3
+2024-07-09 22:33:03,478 DEBUG:Selected year: 2026, Selected month: June (6)
+2024-07-09 22:33:03,478 DEBUG:Number of days in month: 30
+2024-07-09 22:33:03,479 DEBUG:First day of the month (0=Mon, 6=Sun): 0
+2024-07-09 22:33:04,489 DEBUG:Selected year: 2026, Selected month: July (7)
+2024-07-09 22:33:04,489 DEBUG:Number of days in month: 31
+2024-07-09 22:33:04,490 DEBUG:First day of the month (0=Mon, 6=Sun): 2
+2024-07-09 22:33:05,246 DEBUG:Selected year: 2025, Selected month: July (7)
+2024-07-09 22:33:05,247 DEBUG:Number of days in month: 31
+2024-07-09 22:33:05,247 DEBUG:First day of the month (0=Mon, 6=Sun): 1
+2024-07-09 22:33:05,588 DEBUG:Selected year: 2024, Selected month: July (7)
+2024-07-09 22:33:05,588 DEBUG:Number of days in month: 31
+2024-07-09 22:33:05,588 DEBUG:First day of the month (0=Mon, 6=Sun): 0
+2024-07-09 22:33:06,946 INFO:Trades saved successfully.
