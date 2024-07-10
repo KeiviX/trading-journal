@@ -118,10 +118,16 @@ class TradingJournal:
         new_window = tk.Toplevel(self.root)
         new_window.title(f"Trades on {day}-{month}-{year}")
 
+        self.display_trades_in_window(new_window, year, month, day)
+
+    def display_trades_in_window(self, window, year, month, day):
+        for widget in window.winfo_children():
+            widget.destroy()
+
         trades = self.trades.get((year, month, day), [])
 
         for i, trade in enumerate(trades):
-            trade_frame = ttk.LabelFrame(new_window, text=f"Trade {i + 1}")
+            trade_frame = ttk.LabelFrame(window, text=f"Trade {i + 1}")
             trade_frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=5)
 
             for key, value in trade.items():
@@ -137,12 +143,16 @@ class TradingJournal:
                     comment_button.pack(anchor='w')
 
             delete_button = ttk.Button(trade_frame, text="Delete Trade",
-                                       command=lambda i=i: self.delete_trade(year, month, day, i, new_window))
+                                       command=lambda i=i: self.delete_trade(year, month, day, i, window))
             delete_button.pack(anchor='e', pady=5)
 
-        add_button = ttk.Button(new_window, text="Add Trade",
-                                command=lambda: self.add_trade(year, month, day, new_window))
+        add_button = ttk.Button(window, text="Add Trade",
+                                command=lambda: self.open_add_trade_window(year, month, day, window))
         add_button.pack(pady=10)
+
+    def open_add_trade_window(self, year, month, day, parent_window):
+        parent_window.destroy()
+        self.add_trade(year, month, day)
 
     def view_screenshot(self, filepath):
         try:
@@ -196,8 +206,7 @@ class TradingJournal:
         self.update_calendar()
         self.update_summary()
         self.update_year_stats()
-        window.destroy()
-        self.view_trades(year, month, day)
+        self.display_trades_in_window(window, year, month, day)
 
     def add_trade(self, year, month, day, parent_window=None):
         new_window = tk.Toplevel(self.root)
@@ -224,6 +233,10 @@ class TradingJournal:
                                                                                                   entries['Pair'].get()))
                 browse_button.grid(row=i, column=2)
 
+                select_file_button = ttk.Button(new_window, text="Select File",
+                                                command=lambda e=entries[field]: self.select_image_file(e))
+                select_file_button.grid(row=i, column=3)
+
         save_button = ttk.Button(new_window, text="Save Trade",
                                  command=lambda: self.save_trade(entries, year, month, day, new_window, parent_window))
         save_button.grid(row=len(fields), column=1, pady=10)
@@ -241,6 +254,10 @@ class TradingJournal:
 
             # Get the image from the clipboard
             image = ImageGrab.grabclipboard()
+
+            # Ensure the image is of the correct type
+            if isinstance(image, list):
+                image = next((img for img in image if isinstance(img, Image.Image)), None)
 
             if image:
                 # Format the filename
@@ -261,6 +278,16 @@ class TradingJournal:
         except Exception as e:
             print(f"Error occurred while capturing screenshot: {e}")
             messagebox.showerror("Screenshot Error", f"An error occurred while capturing the screenshot:\n{e}")
+
+    def select_image_file(self, entry):
+        filetypes = [
+            ('Image files', '*.png;*.jpg;*.jpeg;*.bmp;*.gif'),
+            ('All files', '*.*')
+        ]
+        filepath = filedialog.askopenfilename(title='Select an image file', filetypes=filetypes)
+        if filepath:
+            entry.delete(0, tk.END)
+            entry.insert(0, filepath)
 
     def save_trade(self, entries, year, month, day, window, parent_window):
         try:
@@ -284,10 +311,9 @@ class TradingJournal:
             self.update_summary()
             self.update_year_stats()
             self.save_trades()
-            window.destroy()
+            window.destroy()  # Close the Add Trade window
             if parent_window:
-                parent_window.destroy()
-                self.view_trades(year, month, day)
+                self.display_trades_in_window(parent_window, year, month, day)
         except ValueError:
             messagebox.showerror("Invalid Input", "Please enter a valid number for the amount.")
 
