@@ -21,7 +21,7 @@ class TradingJournal:
     def create_widgets(self):
         self.create_menu()
         self.create_calendar()
-        self.create_stats_sections()
+        self.create_stats_sections()  # Ensure stats sections are created
         self.add_logo()
 
     def add_logo(self):
@@ -453,7 +453,7 @@ class TradingJournal:
             script_dir = os.path.dirname(os.path.abspath(__file__))
             trades_path = os.path.join(script_dir, 'trades.pkl')
             if os.path.exists(trades_path):
-                with open(trades_path, 'rb') as f:  # Removed the extra parenthesis here
+                with open(trades_path, 'rb') as f:
                     trades = pickle.load(f)
                     print(f"Loaded Trades: {trades}")
                     return trades
