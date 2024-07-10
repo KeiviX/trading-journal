@@ -6,10 +6,6 @@ import pandas as pd
 import pickle
 from datetime import datetime
 from PIL import Image, ImageTk, ImageGrab
-import logging
-
-# Configure logging
-logging.basicConfig(filename='trading_journal.log', level=logging.DEBUG, format='%(asctime)s %(levelname)s:%(message)s')
 
 class TradingJournal:
     def __init__(self, root):
@@ -20,7 +16,6 @@ class TradingJournal:
         self.pairs = self.load_pairs()
         self.validate_trades()
         self.create_widgets()
-        self.update_calendar()
         self.root.protocol("WM_DELETE_WINDOW", self.on_closing)
 
     def create_widgets(self):
@@ -39,7 +34,7 @@ class TradingJournal:
             self.logo_label = tk.Label(self.root, image=self.logo_img)
             self.logo_label.place(x=20, y=30)
         except Exception as e:
-            logging.error(f"Error loading logo: {e}")
+            print(f"Error loading logo: {e}")
 
     def create_menu(self):
         menubar = tk.Menu(self.root)
@@ -59,6 +54,7 @@ class TradingJournal:
         current_month = datetime.now().strftime('%B')
         self.year_var = tk.StringVar()
         self.year_var.set(current_year)
+        self.month_var.set(current_month)
 
         self.year_selector_frame = ttk.Frame(self.calendar_frame)
         self.year_selector_frame.grid(row=0, column=0, padx=5, pady=5)
@@ -68,8 +64,7 @@ class TradingJournal:
                                      command=self.update_calendar)
             button.pack(side=tk.LEFT)
 
-        months = [datetime(current_year, i, 1).strftime('%B') for i in range(1, 13)]
-        self.month_var.set(current_month)
+        months = [datetime(1900, i, 1).strftime('%B') for i in range(1, 13)]
 
         month_menu = ttk.OptionMenu(self.calendar_frame, self.month_var, current_month, *months, command=self.update_calendar)
         month_menu.grid(row=0, column=1, padx=5, pady=5)
@@ -87,18 +82,13 @@ class TradingJournal:
         selected_month = self.month_var.get()
         month_index = datetime.strptime(selected_month, '%B').month
         year = int(self.year_var.get())
-        logging.debug(f"Selected year: {year}, Selected month: {selected_month} ({month_index})")
-
-        num_days = (pd.Timestamp(year, month_index, 1) + pd.DateOffset(months=1) - pd.DateOffset(days=1)).day
-        logging.debug(f"Number of days in month: {num_days}")
+        num_days = (pd.Timestamp(year, month_index + 1, 1) - pd.Timestamp(year, month_index, 1)).days if month_index < 12 else 31
 
         days_of_week = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
         for i, day in enumerate(days_of_week):
             tk.Label(self.calendar_grid, text=day).grid(row=0, column=i)
 
-        first_day = pd.Timestamp(year, month_index, 1).dayofweek
-        logging.debug(f"First day of the month (0=Mon, 6=Sun): {first_day}")
-
+        first_day_of_month = (datetime(year, month_index, 1).weekday() + 1) % 7  # Adjusting to start the week from Sunday
         for day in range(1, num_days + 1):
             trade_info = self.trades.get((year, month_index, day))
 
@@ -115,11 +105,11 @@ class TradingJournal:
             button = tk.Button(self.calendar_grid, text=button_text,
                                command=lambda d=day: self.view_trades(year, month_index, d))
             button.config(bg=color)
-            button.grid(row=(day + first_day) // 7 + 1, column=(day + first_day) % 7, padx=5, pady=5, ipadx=10, ipady=10, sticky="nsew")
+            button.grid(row=(day + first_day_of_month) // 7 + 1, column=(day + first_day_of_month) % 7, padx=5, pady=5, ipadx=10, ipady=10, sticky="nsew")
 
         for i in range(7):
             self.calendar_grid.columnconfigure(i, weight=1)
-        for i in range((num_days + first_day) // 7 + 2):
+        for i in range((num_days + first_day_of_month) // 7 + 2):
             self.calendar_grid.rowconfigure(i, weight=1)
 
         self.update_summary()
@@ -157,12 +147,12 @@ class TradingJournal:
     def view_screenshot(self, filepath):
         try:
             if os.path.exists(filepath):
-                os.system(f'open "{filepath}"')  # Ensure the path is correctly handled
+                os.startfile(filepath)  # Use os.startfile for Windows
             else:
-                logging.error(f"File not found: {filepath}")
+                print(f"File not found: {filepath}")  # Debugging print statement
                 messagebox.showerror("File Not Found", "The screenshot file does not exist.")
         except Exception as e:
-            logging.error(f"Error opening file: {e}")
+            print(f"Error opening file: {e}")  # Error handling
             messagebox.showerror("File Open Error", f"An error occurred while opening the file:\n{e}")
 
     def view_comment(self, comment, parent_frame):
@@ -254,22 +244,22 @@ class TradingJournal:
 
             if image:
                 # Format the filename
-                existing_files = [f for f in os.listdir(screenshots_dir) if f.startswith(f"{year}-{month:02d}-{day:02d} {pair_safe}")]
+                existing_files = [f for f in os.listdir(screenshots_dir) if f.startswith(f"{pair_safe}-{year}-{month:02d}-{day:02d}")]
                 occurrence = len(existing_files) + 1
-                filename = os.path.join(screenshots_dir, f"{year}-{month:02d}-{day:02d} {pair_safe} {occurrence}.png")
+                filename = os.path.join(screenshots_dir, f"{pair_safe}-{year}-{month:02d}-{day:02d}-{occurrence}.png")
 
                 # Save the image
                 image.save(filename, "PNG")
 
                 # Update the entry with the new filename
-                logging.info(f"Saved file: {filename}")
+                print(f"Saved file: {filename}")
                 entry.delete(0, tk.END)
                 entry.insert(0, filename)
             else:
-                logging.error("No image found in clipboard.")
+                print("No image found in clipboard.")
                 messagebox.showerror("Clipboard Error", "No image found in the clipboard.")
         except Exception as e:
-            logging.error(f"Error occurred while capturing screenshot: {e}")
+            print(f"Error occurred while capturing screenshot: {e}")
             messagebox.showerror("Screenshot Error", f"An error occurred while capturing the screenshot:\n{e}")
 
     def save_trade(self, entries, year, month, day, window, parent_window):
@@ -343,7 +333,7 @@ class TradingJournal:
                 self.monthly_profit_label.config(bg='red', fg='white')
 
         except Exception as e:
-            logging.error(f"Error updating summary: {e}")
+            print(f"Error updating summary: {e}")
 
     def view_yearly_stats(self):
         new_window = tk.Toplevel(self.root)
@@ -454,21 +444,21 @@ class TradingJournal:
             trades_path = os.path.join(script_dir, 'trades.pkl')
             with open(trades_path, 'wb') as f:
                 pickle.dump(self.trades, f)
-            logging.info("Trades saved successfully.")
+            print("Trades saved successfully.")
         except Exception as e:
-            logging.error(f"Error saving trades: {e}")
+            print(f"Error saving trades: {e}")
 
     def load_trades(self):
         try:
             script_dir = os.path.dirname(os.path.abspath(__file__))
             trades_path = os.path.join(script_dir, 'trades.pkl')
             if os.path.exists(trades_path):
-                with open(trades_path, 'rb') as f:
+                with open(trades_path, 'rb') as f:  # Removed the extra parenthesis here
                     trades = pickle.load(f)
-                    logging.info(f"Loaded Trades: {trades}")
+                    print(f"Loaded Trades: {trades}")
                     return trades
         except Exception as e:
-            logging.error(f"Error loading trades: {e}")
+            print(f"Error loading trades: {e}")
         return {}
 
     def save_pairs(self):
@@ -477,9 +467,9 @@ class TradingJournal:
             pairs_path = os.path.join(script_dir, 'pairs.pkl')
             with open(pairs_path, 'wb') as f:
                 pickle.dump(self.pairs, f)
-            logging.info("Pairs saved successfully.")
+            print("Pairs saved successfully.")
         except Exception as e:
-            logging.error(f"Error saving pairs: {e}")
+            print(f"Error saving pairs: {e}")
 
     def load_pairs(self):
         try:
@@ -490,7 +480,7 @@ class TradingJournal:
                     pairs = pickle.load(f)
                     return pairs
         except Exception as e:
-            logging.error(f"Error loading pairs: {e}")
+            print(f"Error loading pairs: {e}")
         return ["EUR/USD", "USD/JPY", "GBP/USD", "USD/CHF", "AUD/USD", "USD/CAD", "NZD/USD", "Gold"]
 
     def validate_trades(self):
