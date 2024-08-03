@@ -117,6 +117,7 @@ class TradingJournal:
     def view_trades(self, year, month, day):
         new_window = tk.Toplevel(self.root)
         new_window.title(f"Trades on {day}-{month}-{year}")
+        new_window.geometry("400x400")
 
         self.display_trades_in_window(new_window, year, month, day)
 
@@ -175,6 +176,8 @@ class TradingJournal:
         edit_button = ttk.Button(comment_frame, text="Edit Comment", command=lambda: self.edit_comment(comment_label))
         edit_button.pack(anchor='e', pady=5)
 
+        close_button = ttk.Button(comment_frame, text="Close Comment", command=lambda: self.close_comment(comment_label))
+
         delete_button = ttk.Button(comment_frame, text="Delete Comment",
                                    command=lambda: self.delete_comment(comment_frame, comment_label))
         delete_button.pack(anchor='e', pady=5)
@@ -193,6 +196,9 @@ class TradingJournal:
         comment_label.config(text=new_comment)
         comment_entry.pack_forget()
         save_button.pack_forget()
+
+    def close_comment(self, comment_frame, comment_label):
+        comment_frame.pack_forget()
 
     def delete_comment(self, comment_frame, comment_label):
         comment_frame.pack_forget()
@@ -233,9 +239,9 @@ class TradingJournal:
                                                                                                   entries['Pair'].get()))
                 browse_button.grid(row=i, column=2)
 
-                select_file_button = ttk.Button(new_window, text="Select File",
-                                                command=lambda e=entries[field]: self.select_image_file(e))
-                select_file_button.grid(row=i, column=3)
+                # select_file_button = ttk.Button(new_window, text="Select File",
+                #                                 command=lambda e=entries[field]: self.select_image_file(e))
+                # select_file_button.grid(row=i, column=3)
 
         save_button = ttk.Button(new_window, text="Save Trade",
                                  command=lambda: self.save_trade(entries, year, month, day, new_window, parent_window))
@@ -279,15 +285,15 @@ class TradingJournal:
             print(f"Error occurred while capturing screenshot: {e}")
             messagebox.showerror("Screenshot Error", f"An error occurred while capturing the screenshot:\n{e}")
 
-    def select_image_file(self, entry):
-        filetypes = [
-            ('Image files', '*.png;*.jpg;*.jpeg;*.bmp;*.gif'),
-            ('All files', '*.*')
-        ]
-        filepath = filedialog.askopenfilename(title='Select an image file', filetypes=filetypes)
-        if filepath:
-            entry.delete(0, tk.END)
-            entry.insert(0, filepath)
+    # def select_image_file(self, entry):
+    #     filetypes = [
+    #         ('Image files', '*.png;*.jpg;*.jpeg;*.bmp;*.gif'),
+    #         ('All files', '*.*')
+    #     ]
+    #     filepath = filedialog.askopenfilename(title='Select an image file', filetypes=filetypes)
+    #     if filepath:
+    #         entry.delete(0, tk.END)
+    #         entry.insert(0, filepath)
 
     def save_trade(self, entries, year, month, day, window, parent_window):
         try:
